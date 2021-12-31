@@ -21,6 +21,7 @@ public class CadastroController {
     public String form(){
         return "cadastro/formCadastro";
     }
+
     @RequestMapping(value = "/cadastrar", method = RequestMethod.POST)
     public String form( Cadastro cadastro, CadastroCampo cadastroCampo ){
         cadastroRepository.save ( cadastro );
